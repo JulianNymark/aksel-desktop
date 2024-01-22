@@ -12,7 +12,12 @@ export const Header = () => {
     <InternalHeader>
       <InternalHeader.Title
         as="button"
-        onClick={() => console.log("aksel-logo-click")}
+        onClick={() =>
+          window.electronAPI.sendNotification(
+            "Aksel-desktop",
+            "you clicked the aksel-desktop button"
+          )
+        }
       >
         <AkselLogotype />
       </InternalHeader.Title>
