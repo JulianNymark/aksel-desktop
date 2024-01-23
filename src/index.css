@@ -2,35 +2,38 @@
   transform: scale(0.85) translate(0, 2px);
 }
 
+body,
+:host {
+  font-family: var(--a-font-family, "source-sans-pro", Arial, sans-serif);
+  line-height: 1.333;
+  font-size: 1.125rem;
+}
+
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "source-sans-pro" !important;
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("https://cdn.nav.no/aksel/fonts/SourceSans3-italic.woff2")
-    format("woff2");
+  src: url("./fonts/SourceSans3-italic.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "source-sans-pro" !important;
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("https://cdn.nav.no/aksel/fonts/SourceSans3-italic-latin-semibold.woff2")
-    format("woff2");
+  src: url("./fonts/SourceSans3-italic-latin-semibold.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "source-sans-pro" !important;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("https://cdn.nav.no/aksel/fonts/SourceSans3-normal.woff2")
-    format("woff2");
+  src: url("./fonts/SourceSans3-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "source-sans-pro" !important;
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("https://cdn.nav.no/aksel/fonts/SourceSans3-normal.woff2")
-    format("woff2");
+  src: url("./fonts/SourceSans3-normal.woff2") format("woff2");
 }
