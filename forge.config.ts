@@ -12,6 +12,17 @@ const config: ForgeConfig = {
     new MakerZIP({}, ["darwin"]),
     new MakerDeb({}),
   ],
+  publishers: [
+    {
+      name: "@electron-forge/publisher-github",
+      config: {
+        repository: {
+          owner: "juliannymark",
+          name: "aksel-desktop",
+        },
+      },
+    },
+  ],
   plugins: [
     new VitePlugin({
       // `build` can specify multiple entry builds, which can be Main process, Preload scripts, Worker process, etc.
